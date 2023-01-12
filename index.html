@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn start-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- jquery cdn end-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>New Zealand Tourism Travel</title>
+</head>
+
+<body>
+    <header>
+        <div><img src="assets/images/pure-new-zealand-logo.svg" alt="pure-new-zealand-logo"></div>
+    </header>
+    <section class="hero">
+        <div class="background-image">
+            <img class="bg_img" src="assets/images/Main-Image.jpg" alt="Main-Image">
+            <div class="groupWithLogo">
+                <img src="assets/images/kombi-logo.png" alt="logo">
+                <div class="htitle">
+                    Flexible rentals with <br> no hidden fees
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="banner">
+            <h1>Welcome to Kombi</h1>
+            <h5>Get a free quote today</h5>
+        </div>
+    </section>
+    <!-- <form action=""> -->
+    <section>
+        <div class="choose-dropbox">
+            <h2>Choose Your Vehicle</h2>
+            <p>Select the amount in your party and length of stay to determine available selection of vehicles</p>
+            <span class="dropdown">
+                <h3>Amount of People:</h3>
+                <select class="drop_down mr20" name="people" id="people">
+                    <option value="1" id="p1" selected>1</option>
+                    <option value="2" id="p2">2</option>
+                    <option value="3" id="p3">3</option>
+                    <option value="4" id="p4">4</option>
+                    <option value="5" id="p5">5</option>
+                    <option value="6" id="p6">6</option>
+                </select>
+                <h3 class="">Amount of Days:</h3>
+                <select class="drop_down" name="days" id="days">
+                    <option value="1" id="d1" selected="">1</option>
+                    <option value="2" id="d2">2</option>
+                    <option value="3" id="d3">3</option>
+                    <option value="4" id="d4">4</option>
+                    <option value="5" id="d5">5</option>
+                    <option value="6" id="d6">6</option>
+                    <option value="7" id="d7">7</option>
+                    <option value="8" id="d8">8</option>
+                    <option value="9" id="d9">9</option>
+                    <option value="10" id="d10">10</option>
+                </select>
+            </span>
+        </div>
+    </section>
+    <section class="vehicle-selection">
+        <div class="vehicle-box">
+            <div class="vehicles" >
+                <div class="car-header">
+                    <H3>Motorbike</H3>
+                    <p>1 Person</p>
+                </div>
+                <img src="assets/images/bike.jpg" alt="motorbike">
+                <div class="car-price">$109/day</div>
+                <button class="choose" id="motorBike">Choose</button>
+            </div>
+            <div class="vehicles" >
+                <div class="car-header">
+                    <H3>Small Car</H3>
+                    <p>1-2 People</p>
+                </div>
+                <img src="assets/images/car.jpg" alt="small-car">
+                <div class="car-price">$129/day</div>
+                <button class="choose" id="smallCar">Choose</button>
+            </div>
+            <div class="vehicles" >
+                <div class="car-header">
+                    <H3>Large Car</H3>
+                    <p>1-5 People</p>
+                </div>
+                <img src="assets/images/suv.jpg" alt="large-car">
+                <div class="car-price">$144/day</div>
+                <button class="choose" id="largeCar">Choose</button>
+            </div>
+            <div class="vehicles">
+                <div class="car-header">
+                    <H3>Motorhome</H3>
+                    <p>2-6 People</p>
+                </div>
+                <img src="assets/images/motorhome.jpg" alt="motorhome">
+                <div class="car-price">$200/day</div>
+                <button class="choose" id="motorHome">Choose</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="choose-dropbox">
+            <h2>Get Travel Costs</h2>
+            <p>Select the amount in your party and length of stay to determine available selection of vehicles</p>
+            <div class="dropdown">
+                <h3>Pick-up Location:</h3>
+                <select name="pickup" id="pickup" class="mr20 drop_down">
+                    <option value="akl" selected>Auckland</option>
+                    <option value="npr">Napier</option>
+                    <option value="wlt">Wellington</option>
+                </select>
+                <h3>Drop-Off Location:</h3>
+                <select name="dropoff" id="dropoff" class="drop_down">
+                    <option value="akl">Auckland</option>
+                    <option value="npr" selected>Napier</option>
+                    <option value="wlt">Wellington</option>
+                </select>
+            </div>
+            <input type="submit" value="Get Estimate" id="estimate" class="estimate">
+        </div>
+    </section>
+    <section id="estimateShow" class="estimateShow">Estimated Price Will be shown here!</section>
+    <!-- </form> -->
+    <footer class="footer-back">
+        <div>
+            <p class="footer-text">By Anthea De Vos</p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
